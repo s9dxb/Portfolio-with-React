@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Navbar, Container } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
