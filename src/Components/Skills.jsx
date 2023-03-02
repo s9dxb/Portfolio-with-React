@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col, row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import meter1 from "../assets/img/meter1.svg";
@@ -30,8 +30,8 @@ export const Skills = () => {
 
   return (
     <section className="skill" id="skills">
-      <container>
-        <row>
+      <Container>
+        <Row>
           <Col>
             <div className="skill-bx">
               <h2>Skills</h2>
@@ -65,9 +65,9 @@ export const Skills = () => {
               </Carousel>
             </div>
           </Col>
-        </row>
-      </container>
-      <img className="background-image-left" src={colorSharp} />
+        </Row>
+      </Container>
+      <img src={colorSharp} className="background-image-left" />
     </section>
   );
 };
