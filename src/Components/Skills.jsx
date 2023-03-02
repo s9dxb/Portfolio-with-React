@@ -1,10 +1,9 @@
-import React from "react";
-import { Container, Col, row } from "react-bootstrap";
-import Carousel from "react-multi-carousel";
+import { Container, Col, Row } from "react-bootstrap";
 import "react-multi-carousel/lib/styles.css";
 import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
+import Carousel from "react-multi-carousel";
 import colorSharp from "../assets/img/color-sharp.png";
 
 export const Skills = () => {
@@ -33,33 +32,32 @@ export const Skills = () => {
       <Container>
         <Row>
           <Col>
-            <div className="skill-bx">
+            <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti eos voluptatem accusamus consequatur unde sequi ex
-                veniam ratione rem, voluptate nisi assumenda quibusdam
-                perferendis eum sint quod beatae facilis harum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.<br></br> Lorem Ipsum has been the industry's standard
+                dummy text.
               </p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
-                className="skill-slider"
+                className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">
-                  <img src={meter1} alt="" />
+                  <img src={meter1} alt="Image" />
                   <h5>Web Development</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="" />
+                  <img src={meter2} alt="Image" />
                   <h5>Brand Identity</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="" />
+                  <img src={meter3} alt="Image" />
                   <h5>Logo Design</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="" />
+                  <img src={meter1} alt="Image" />
                   <h5>Web Development</h5>
                 </div>
               </Carousel>
@@ -67,7 +65,7 @@ export const Skills = () => {
           </Col>
         </Row>
       </Container>
-      <img src={colorSharp} className="background-image-left" />
+      <img src={colorSharp} className="background-image-left" alt="Image" />
     </section>
   );
 };
