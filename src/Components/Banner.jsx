@@ -79,7 +79,7 @@ export const Banner = () => {
             </button>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={" "} alt="Header Img" />
+            <img src={headerImg} alt="Header Img" />
           </Col>
         </Row>
       </Container>
