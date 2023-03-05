@@ -1,5 +1,5 @@
 import { useState, React } from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 
 export const Contact = () => {
@@ -28,15 +28,15 @@ export const Contact = () => {
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
-        "Content-Type": "Application/json;charset=utf-8",
+        "Content-Type": "application/json;charset=utf-8",
       },
       body: JSON.stringify(formDetails),
     });
     setButtonText("Send");
-    let result = response.json();
+    let result = await response.json();
     setFormDetails(formInitialDetails);
-    if (result.code === 200) {
-      setStatus({ success: true, message: "Message sent successfully" });
+    if (result.code == 200) {
+      setStatus({ succes: true, message: "Message sent successfully" });
     } else {
       setStatus({
         succes: false,
