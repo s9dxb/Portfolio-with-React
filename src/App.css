@@ -112,6 +112,12 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-size: 18px;
   opacity: 0.75;
 }
+@media only screen and (max-width: 992px) {
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    font-size: 10px;
+  }
+}
+
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
@@ -241,11 +247,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 260px 0 100px 100px;
   background-image: url("./assets/img/banner-bg.png");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  max-width: auto;
+  margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .banner .tagline {
   font-weight: 700;
